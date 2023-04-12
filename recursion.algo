@@ -1,0 +1,26 @@
+// Declare a counter variable
+let counter = 0;
+
+//Declare a boolean variable to store the result
+let isPalindrome = true;
+
+// Store the string value
+let str = "gag";
+
+// Start loop to compare the characters
+while (counter < str.length / 2) {
+    // Compare first and last character of string
+    if (str[counter] !== str[str.length - counter - 1]) {
+        isPalindrome = false;
+        break;
+    }
+    // Increment the counter
+    counter++;
+}
+
+// Print the result
+if (isPalindrome) {
+    console.log(`${str} is a palindrome.`);
+} else {
+    console.log(`${str} is not a palindrome.`);
+}
